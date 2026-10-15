@@ -31,5 +31,11 @@ import com.example.meet5.R
 
 @Composable
 fun FormDataDiri(modifier: Modifier) {
-   
+    // Variabel untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf(value = "") }
+    var textAlamat by remember { mutableStateOf(value = "") }
+    var textJK by remember { mutableStateOf(value = "") }
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
+
+    
 }
